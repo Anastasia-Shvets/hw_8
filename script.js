@@ -1,9 +1,8 @@
-var quantityWords = 50;
 var alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
 var result = {};
 
-function random (minLetters, maxLetters) {
+function random (minLetters, maxLetters, quantityWords) {
     for (var i = 0; i < quantityWords; i++) {
         var word = '';
         var length = Math.floor(Math.random() * (maxLetters - minLetters) + minLetters);
@@ -20,7 +19,7 @@ function random (minLetters, maxLetters) {
         }
     }
 }
-random (5, 15);
+random (5, 15, 50);
 
 function res () {
     for (var key in result) {
